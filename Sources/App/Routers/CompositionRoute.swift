@@ -14,7 +14,7 @@ public enum CompositionRoute {
     }
     
     static func routeGroup(using app: Application) throws {
-        let groupController: GroupController = MockGroupControllerImp()
+        let groupController: GroupController = GroupControllerImp()
         let groupRouter: GroupRouter = GroupRouterImp(controller: groupController)
         try groupRouter.routes(using: app)
     }

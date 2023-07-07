@@ -8,5 +8,5 @@
 import Vapor
 
 struct GroupID: Content {
-    var id: String
+    var id: UUID
 }
